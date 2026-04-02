@@ -58,7 +58,7 @@ After=network.target
 [Service]
 Type=simple
 WorkingDirectory=${APP_DIR}
-ExecStart=${APP_DIR}/venv/bin/python ${APP_DIR}/main.py
+ExecStart=${APP_DIR}/venv/bin/python ${APP_DIR}/index.py
 Restart=always
 RestartSec=3
 User=root
