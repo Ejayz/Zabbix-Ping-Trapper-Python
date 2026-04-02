@@ -26,8 +26,8 @@ if [ -d "$APP_DIR" ]; then
 fi
 
 git clone "$REPO_URL" "$APP_DIR"
-
-
+pip install zabbix_utils
+pip install icmplib
 cd "$APP_DIR"
 
 
