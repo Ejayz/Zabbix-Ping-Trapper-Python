@@ -26,8 +26,7 @@ if [ -d "$APP_DIR" ]; then
 fi
 
 git clone "$REPO_URL" "$APP_DIR"
-pip install zabbix_utils
-pip install icmplib
+
 cd "$APP_DIR"
 
 
@@ -35,8 +34,9 @@ echo "[4/6] Creating virtual environment..."
 python3 -m venv venv
 source venv/bin/activate
 
-
 echo "[5/6] Installing Python dependencies..."
+pip install zabbix_utils
+pip install icmplib
 pip install --upgrade pip
 
 
